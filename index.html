@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jai Subhash Rayani — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Jai Subhash Rayani" />
+
+  <script>
+    (function () {
+      var theme = localStorage.getItem('portfolio-theme');
+      if (theme === 'dark') document.documentElement.classList.add('dark-theme');
+    })();
+  </script>
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav-bar">
+
+      <a href="#" class="nav-logo">JSR<span class="accent-dot">.</span></a>
+
+      <button id="theme-toggle" type="button" aria-label="Toggle theme">
+        Theme
+      </button>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="hero">
+      <div class="hero-content">
+        <div class="avatar-wrapper">
+          <img src="profile.png" alt="Jay Subhash Rayani" class="profile-photo" />
+        </div>
+        <h1>Jay Subhash Rayani</h1>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-text">
+        <p>
+          Hey, I'm Jay. I build things with code, cameras, and occasionally tools in a workshop.
+        </p>
+        <p>
+         Most of my days are spent developing software—ranging from custom camera tooling in SwiftUI to web prototypes—and directing client work at Triple-Lens Media. When I’m not debugging or color-grading in DaVinci Resolve, you’ll usually find me on a badminton court or tinkering with custom mechanical builds.
+        </p>
+        <p>
+          I care about execution speed, clean aesthetics, and building things people genuinely love to use. Always up for building ambitious projects or collaborating on something new.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skill-pills">
+        <span class="pill">HTML</span>
+        <span class="pill">CSS</span>
+        <span class="pill">Entrepreneurship</span>
+        <span class="pill">Videography</span>
+        <span class="pill">Photography</span>
+        <span class="pill">Digital Marketing</span>
+        <span class="pill">Problem Solving</span>
+        <span class="pill">Figma</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Get In Touch</h2>
+      <div class="contact-links">
+        
+        <a href="https://github.com/JaiSubhashRayani/" 
+          target="_blank"
+          class="btn btn-secondary">
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/jay-subhash-rayani-12849238b/" 
+          target="_blank" 
+          class="btn btn-secondary">
+          LinkedIn
+        </a>
+        <a href="mailto:rayanisubhash7@gmail.com" class="btn btn-secondary"
+          target="_blank">
+                     Gmail
+                </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <P style="text-align: center;">---------------------------------</P>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
