@@ -2,6 +2,20 @@ const buttons = document.querySelectorAll('#theme-toggle, .theme-toggle');
 const themeKey = 'portfolio-theme';
 const root = document.documentElement;
 
+function getStoredTheme() {
+  try {
+    return localStorage.getItem(themeKey);
+  } catch (_) {
+    return null;
+  }
+}
+
+function setStoredTheme(value) {
+  try {
+    localStorage.setItem(themeKey, value);
+  } catch (_) {}
+}
+
 function setTheme(isDark) {
   root.classList.toggle('dark-theme', isDark);
 
@@ -14,21 +28,12 @@ function setTheme(isDark) {
   });
 }
 
-setTheme(localStorage.getItem(themeKey) === 'dark');
+setTheme(getStoredTheme() === 'dark');
 
 buttons.forEach((button) => {
   button.addEventListener('click', () => {
     const isDark = !root.classList.contains('dark-theme');
     setTheme(isDark);
-    try {
-      localStorage.setItem(themeKey, isDark ? 'dark' : 'light');
-    } catch (_) {
-  
-    }
+    setStoredTheme(isDark ? 'dark' : 'light');
   });
 });
-
-const yearSpan = document.getElementById('year');
-if (yearSpan) {
-  yearSpan.textContent = new Date().getFullYear();
-}
