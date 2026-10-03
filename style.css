@@ -153,3 +153,62 @@ footer {
     text-align: center;
   }
 }
+
+html.dark-theme body {
+  background-color: #121214;
+  color: #e4e4e7;
+}
+
+html.dark-theme .site-header {
+  background-color: #18181b;
+  border-bottom-color: #27272a;
+}
+
+html.dark-theme .nav-logo {
+  color: #ffffff;
+}
+
+html.dark-theme #theme-toggle {
+  background-color: #27272a;
+  color: #f4f4f5;
+  border-color: #3f3f46;
+}
+
+html.dark-theme #theme-toggle:hover {
+  background-color: #3f3f46;
+}
+
+html.dark-theme .profile-photo {
+  border-color: #27272a;
+}
+
+html.dark-theme .about-text p {
+  color: #a1a1aa;
+}
+
+html.dark-theme .pill {
+  background-color: #1e1b4b;
+  color: #818cf8;
+  border-color: #312e81;
+}
+
+html.dark-theme .pill:hover {
+  background-color: #4f46e5;
+  color: #ffffff;
+}
+
+html.dark-theme .btn {
+  background-color: #18181b;
+  color: #f4f4f5;
+  border-color: #3f3f46;
+}
+
+html.dark-theme .btn:hover {
+  border-color: #818cf8;
+  color: #818cf8;
+}
+
+html.dark-theme footer {
+  border-top-color: #27272a;
+  color: #71717a;
+}
